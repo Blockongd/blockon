@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블럭나라 - 우리집 블럭방 대여 시스템</title>
+    <style>
+        /* 기본 스타일 */
+        body { font-family: 'Malgun Gothic', sans-serif; margin: 0; padding: 0; background-color: #fafafa; color: #333; line-height: 1.6; }
+        header { background-color: #ffd32a; padding: 20px; text-align: center; font-weight: bold; font-size: 24px; color: #1e272e; }
+        nav { background: #333; text-align: center; padding: 10px; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        .container { max-width: 800px; margin: 30px auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h2 { border-left: 5px solid #ff4757; padding-left: 10px; color: #1e272e; }
+        .btn { display: inline-block; background: #ff4757; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 15px; }
+        .process-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        .process-table th, .process-table td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        .process-table th { background-color: #f1f2f6; }
+        .form-group { margin-bottom: 15px; }
+        .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        .submit-btn { background: #2ed573; color: white; border: none; padding: 12px; width: 100%; border-radius: 4px; font-size: 16px; cursor: pointer; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <header>🧸 블럭나라 🧱</header>
+    
+    <nav>
+        <a href="#main">메인</a>
+        <a href="#about">회사소개</a>
+        <a href="#process">대여프로세스</a>
+        <a href="#contact">문의하기</a>
+    </nav>
+
+    <div id="main" class="container" style="text-align: center;">
+        <h1>우리 집이 바로 똑똑한 블럭방!</h1>
+        <p>안전하게 소독된 정품 블럭을 집에서 편하게 대여하고 반납하세요. 매달 새로운 즐거움이 배달됩니다.</p>
+        <a href="#contact" class="btn">지금 대여 문의하기</a>
+    </div>
+
+    <div id="about" class="container">
+        <h2>회사 소개</h2>
+        <p><strong>비싼 블럭 세트, 이제 사지 말고 대여하세요!</strong></p>
+        <p>블럭나라는 부모님의 마음으로 철저한 위생과 정품 관리를 약속합니다.</p>
+        <ul>
+            <li><strong>100% 정품 레고/블럭:</strong> 누락 부품 없는 완벽한 세트 관리</li>
+            <li><strong>친환경 고온 스팀 살균:</strong> 아이 입에 들어가도 안전한 3단계 세척 시스템</li>
+            <li><strong>무료 왕복 배송:</strong> 문 앞 배송 및 문 앞 수거로 편리함 극대화</li>
+        </ul>
+    </div>
+
+    <div id="process" class="container">
+        <h2>대여 프로세스</h2>
+        <table class="process-table">
+            <thead>
+                <tr>
+                    <th>단계</th>
+                    <th>프로세스명</th>
+                    <th>상세 설명</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>01</strong></td>
+                    <td><strong>블럭 고르기</strong></td>
+                    <td>홈페이지에서 아이가 좋아하는 테마와 난이도별 블럭 선택</td>
+                </tr>
+                <tr>
+                    <td><strong>02</strong></td>
+                    <td><strong>안전 배송</strong></td>
+                    <td>철저하게 살균 소독된 블럭을 전용 가방에 담아 집 앞으로 배송</td>
+                </tr>
+                <tr>
+                    <td><strong>03</strong></td>
+                    <td><strong>신나는 조립</strong></td>
+                    <td>기간 제한 없이 집에서 마음껏 창의력 발휘하기</td>
+                </tr>
+                <tr>
+                    <td><strong>04</strong></td>
+                    <td><strong>반납/교환</strong></td>
+                    <td>전용 가방에 그대로 담아 문 앞에 두면 택배 기사님이 자동 수거</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="contact" class="container">
+        <h2>궁금한 점이 있으신가요?</h2>
+        <form onsubmit="alert('문의가 접수되었습니다!'); return false;">
+            <div class="form-group">
+                <input type="text" placeholder="성함 / 기관명" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" placeholder="연락처" required>
+            </div>
+            <div class="form-group">
+                <select>
+                    <option>개인 대여 문의</option>
+                    <option>정기 구독 문의</option>
+                    <option>단체/기관 대여 문의</option>
+                    <option>기타</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="문의 내용을 작성해주세요." rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">문의 신청하기</button>
+        </form>
+    </div>
+
+</body>
+</html>
